@@ -4,7 +4,7 @@
     top: 0;
     height: 100%;
     width: 200px;
-    background-color: aqua;
+    background-color: #f3f3f3;
     border-right: 2px solid #000;
 }
 
@@ -13,6 +13,13 @@
     font-weight: 700px;
     padding: 5px;
     text-align: center;
+}
+
+#navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .nav-link{
@@ -27,20 +34,50 @@
     margin-left: 220px;
 }
 
-@media (max-width: 500px){
+#main-doc header {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.main-section {
+    margin-bottom: 20px;
+}
+
+.main-section p, ul{
+    margin: 5px 0px 5px 10px;
+}
+
+code {
+    display: block;
+    line-height: 2;
+    margin-left: 30px;
+    background-color: #dadada;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 500px){
+
+    #navbar ul{
+        border: 1px solid;
+        height: 110px;
+        margin-left: 0;
+    }
+
     #navbar{
         position: absolute;
         left: 0px;
         top: 0px;
         width: 100%;
         max-height: 150px;
-        border-top: 2px solid #000;
+        border: none;
         border-bottom: 2px solid #000;
         z-index: 1;
     }
 
     #main-doc {
-        margin-top: 220px;
+        margin-top: 170px;
         margin-left: 20px;
     }
 }
